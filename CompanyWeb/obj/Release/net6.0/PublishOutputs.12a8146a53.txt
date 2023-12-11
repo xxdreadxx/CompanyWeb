@@ -238,6 +238,7 @@ E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\obj\Release\net6.0\PubTmp\Out\wwwroot\
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\obj\Release\net6.0\PubTmp\Out\wwwroot\Temps\assets\vendor\swiper\swiper-bundle.min.js
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\obj\Release\net6.0\PubTmp\Out\wwwroot\Temps\assets\vendor\swiper\swiper-bundle.min.js.map
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\obj\Release\net6.0\PubTmp\Out\wwwroot\Temps\LoGoDoiTac\Ekids Brochure.pdf
+E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\obj\Release\net6.0\PubTmp\Out\wwwroot\Temps\LoGoDoiTac\logo123.jpg
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\obj\Release\net6.0\PubTmp\Out\wwwroot\Temps\LoGoDoiTac\logoIcon.jpg
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\obj\Release\net6.0\PubTmp\Out\wwwroot\Temps\LoGoDoiTac\logoIcon_New.png
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\obj\Release\net6.0\PubTmp\Out\wwwroot\Temps\LoGoDoiTac\z4720255150805_72f9b17bae2e104d10ef4830f11b17c2.jpg
