@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace PerfumeStore.Data.EF
+namespace CompanyWeb.Data.EF
 {
     public class CompanyDbContextFactory : IDesignTimeDbContextFactory<CompanyDbContext>
     {

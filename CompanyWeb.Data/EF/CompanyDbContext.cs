@@ -3,15 +3,15 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 //using Microsoft.Identity.Client;
-using PerfumeStore.Data.Configuration;
-using PerfumeStore.Data.Entities;
+using CompanyWeb.Data.Configuration;
+using CompanyWeb.Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PerfumeStore.Data.EF
+namespace CompanyWeb.Data.EF
 {
     public class CompanyDbContext : IdentityDbContext
     {

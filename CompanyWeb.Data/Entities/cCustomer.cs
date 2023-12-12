@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PerfumeStore.Data.Entities
+namespace CompanyWeb.Data.Entities
 {
     public class cCustomer
     {

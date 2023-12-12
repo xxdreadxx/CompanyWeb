@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using PerfumeStore.Data.Entities;
+using CompanyWeb.Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PerfumeStore.Data.Configuration
+namespace CompanyWeb.Data.Configuration
 {
     public class dEmployeeConfiguration : IEntityTypeConfiguration<dEmployee>
     {
