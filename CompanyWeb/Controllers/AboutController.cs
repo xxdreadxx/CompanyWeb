@@ -9,5 +9,10 @@ namespace CompanyWeb.Controllers
             ViewBag.AbountId = id;
             return View();
         }
+
+        public ActionResult Index1()
+        {
+            return View();
+        }
     }
 }
