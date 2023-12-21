@@ -36,6 +36,7 @@ namespace CompanyWeb.Data.EF
             modelBuilder.ApplyConfiguration(new cProductConfiguration());
             modelBuilder.ApplyConfiguration(new dCustomerConfiguartion());
             modelBuilder.ApplyConfiguration(new dEmployeeConfiguration());
+            modelBuilder.ApplyConfiguration(new dFeedbackConfiguration());
             modelBuilder.ApplyConfiguration(new dPostConfiguration());
             modelBuilder.ApplyConfiguration(new dProductConfiguration());
             modelBuilder.ApplyConfiguration(new dQnAConfiguration());
@@ -74,6 +75,7 @@ namespace CompanyWeb.Data.EF
         public DbSet<dPost> dPosts { get; set; }
         public DbSet<dCustomer> dCustomers { get; set; }
         public DbSet<dRecuitment> dRecuitments { get; set; }
+        public DbSet<dFeedback> dFeedbacks { get; set; }
         public DbSet<dEmployee> dEmployees { get; set; }
         public DbSet<sSystem> sSystems { get; set; }
         public DbSet<dUser> dUsers { get; set; }
