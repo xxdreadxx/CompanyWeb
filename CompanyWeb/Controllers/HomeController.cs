@@ -1,21 +1,29 @@
-﻿using CompanyWeb.Models;
+﻿using CompanyWeb.Data.Dao.Client;
+using CompanyWeb.Data.EF;
+using CompanyWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyWeb.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly CompanyDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(CompanyDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
         public ActionResult Index()
         {
+            var dao = new HomeDao(_context);
+            ViewBag.newProduct = dao.getNewdProduct();
+            ViewBag.productStatic = dao.getProductStatic();
+            ViewBag.customer = dao.getCustomer();
+            ViewBag.feedBack = dao.getRandomFeedBack();
+            ViewBag.posts = dao.getPots();
+
             return View();
         }
 
