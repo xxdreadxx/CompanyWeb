@@ -1,9 +1,12 @@
-﻿
+﻿@using CompanyWeb.Data.Entities;
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
     int ID = int.Parse(ViewBag.AbountId.ToString());
+    List<dEmployee> lstEmployee = ViewBag.employee;
+    sSystem sys = ViewBag.system;
     string About = "";
+    int delay = 0;
     if (ID == 1)
     {
         About = "Lịch sử hình thành";
@@ -37,29 +40,33 @@
 
         </div>
     </div>
-    
+
     @if (ID == 1)
     {
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
                 <div class="row position-relative">
                     <div class="col-lg-7 about-img" style="background-image: url(/Temps/LoGoDoiTac/logo123.jpg);"></div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 story-detail">
                         <h2>Lịch sử hình thành</h2>
                         <div class="our-story">
-                            <h4>20/4/2023</h4>
-                            <h3>Công ty chính thức được thành lập</h3>
-                            <p>Được hình thành từ 1 nhóm nhân viên giàu kinh nghiệm về nghiệp vụ, đặc biệt là mảng kế toán, tài chính.</p>
-                            <ul>
+                            @if(sys != null)
+                            {
+                                @Html.Raw(sys.History)
+                                @*<h4>20/4/2023</h4>
+                                <h3>Công ty chính thức được thành lập</h3>
+                                <p>Được hình thành từ 1 nhóm nhân viên giàu kinh nghiệm về nghiệp vụ, đặc biệt là mảng kế toán, tài chính.</p>
+                                <ul>
                                 <li><i class="bi bi-check-circle"></i> <span>28/9/2023 - Ký kết hợp tác với công ty cổ phần giáo dục GDC Toàn Cầu cùng phân phối phần mềm học tập Ekids.</span></li>
                                 <li><i class="bi bi-check-circle"></i> <span>10/10/2023 - Hợp tác với KrystalsTeam - Đội ngũ tư vấn, thiết kế phần mềm</span></li>
                                 <li><i class="bi bi-check-circle"></i> <span>15/8/2023 - Ký hợp tác với công ty TNHH đầu tư và tư vấn xây dựng Tín Thành Phát</span></li>
-                            </ul>
-                            <p>Chúng tôi tự tin với kiến thức và năng lực của mình, công ty có thể hỗ trợ mọi vấn đề, yêu cầu của các bạn!</p>
-                            <div class="watch-video d-flex align-items-center position-relative">
+                                </ul>
+                                <p>Chúng tôi tự tin với kiến thức và năng lực của mình, công ty có thể hỗ trợ mọi vấn đề, yêu cầu của các bạn!</p>
+                                <div class="watch-video d-flex align-items-center position-relative">
                                 <i class="bi bi-play-circle"></i>
                                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox stretched-link">Video giới thiệu</a>
-                            </div>
+                                </div>*@
+                            }
                         </div>
                     </div>
                 </div>
@@ -76,32 +83,38 @@
                         <h3>Giá trị cốt lõi và sứ mệnh</h3>
                         <p>Với định hướng mang đến những giá trị lớn nhất tới tay khách hàng, chúng tôi cung cấp:</p>
                         <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-                            <i class="bi bi-easel flex-shrink-0"></i>
-                            <div>
-                                <h4><a href="" class="stretched-link">Nghiệp vụ kế toán, tài chính</a></h4>
-                                <p>Hỗ trợ các công ty, doanh nghiệp quyết toán thuế, nghiệp vụ kế toán nội bộ</p>
-                            </div>
-                        </div>
-                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-                            <i class="bi bi-patch-check flex-shrink-0"></i>
-                            <div>
-                                <h4><a href="" class="stretched-link">Đào tạo nội bộ</a></h4>
-                                <p>Nhận đào tạo nhân viên mới ở các lĩnh vực kế toán, thuế, tài chính, nhân sự</p>
-                            </div>
-                        </div>
-                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bi bi-brightness-high flex-shrink-0"></i>
-                            <div>
-                                <h4><a href="" class="stretched-link">Cung cấp phần mềm</a></h4>
-                                <p>Cung cấp sản phẩm phần mềm giáo dục, tư vấn thiết kế website, phần mềm theo yêu cầu</p>
-                            </div>
-                        </div>
-                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bi bi-brightness-high flex-shrink-0"></i>
-                            <div>
-                                <h4><a href="" class="stretched-link">Tư vấn thiết kế, thi công</a></h4>
-                                <p>Tư vấn thiết kế, lắp đặt, thi công từ phòng học đến các công trình</p>
-                            </div>
+                            @if (sys != null)
+                            {
+                                @Html.Raw(sys.ValueAndMission)
+                                @*<div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+                                    <i class="bi bi-easel flex-shrink-0"></i>
+                                    <div>
+                                    <h4><a href="" class="stretched-link">Nghiệp vụ kế toán, tài chính</a></h4>
+                                    <p>Hỗ trợ các công ty, doanh nghiệp quyết toán thuế, nghiệp vụ kế toán nội bộ</p>
+                                    </div>
+                                    </div>
+                                    <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+                                    <i class="bi bi-patch-check flex-shrink-0"></i>
+                                    <div>
+                                    <h4><a href="" class="stretched-link">Đào tạo nội bộ</a></h4>
+                                    <p>Nhận đào tạo nhân viên mới ở các lĩnh vực kế toán, thuế, tài chính, nhân sự</p>
+                                    </div>
+                                    </div>
+                                    <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                                    <i class="bi bi-brightness-high flex-shrink-0"></i>
+                                    <div>
+                                    <h4><a href="" class="stretched-link">Cung cấp phần mềm</a></h4>
+                                    <p>Cung cấp sản phẩm phần mềm giáo dục, tư vấn thiết kế website, phần mềm theo yêu cầu</p>
+                                    </div>
+                                    </div>
+                                    <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                                    <i class="bi bi-brightness-high flex-shrink-0"></i>
+                                    <div>
+                                    <h4><a href="" class="stretched-link">Tư vấn thiết kế, thi công</a></h4>
+                                    <p>Tư vấn thiết kế, lắp đặt, thi công từ phòng học đến các công trình</p>
+                                    </div>
+                                </div>*@
+                            }
                         </div>
                     </div>
                 </div>
@@ -160,54 +173,26 @@
                     <p>Với lực lượng nhân viên kinh nghiệm, chúng tôi sẽ góp hết sức để cùng với các bạn đi đến thành công</p>
                 </div>
                 <div class="row gy-5">
-                    <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
-                        <div class="member-img">
-                            <img src="/Temps/assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                    @foreach (var emp in lstEmployee)
+                    {
+                        delay = delay + 100;
+                        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="@delay">
+                            <div class="member-img">
+                                <img src="@emp.Avatar" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info text-center">
+                                <h4>@emp.Name</h4>
+                                <span>@emp.Position</span>
+                                <p>@emp.Content</p>
                             </div>
                         </div>
-                        <div class="member-info text-center">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span>
-                            <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
-                        <div class="member-img" style="height:256px">
-                            <img src="/Temps/LoGoDoiTac/z4729779343165_c579e98ebdbb0c53e754f2c40f21bea5.png" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info text-center">
-                            <h4>Ms Nhật Hồng</h4>
-                            <span>Giám đốc/ Kế toán trưởng</span>
-                            <p>Với hơn 10 năm kinh nghiệm trong ngành và 5 năm trong cương vị kế toán trưởng</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
-                        <div class="member-img">
-                            <img src="/Temps/assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info text-center">
-                            <h4>William Anderson</h4>
-                            <span>CTO</span>
-                            <p>Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui</p>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
         </section>
