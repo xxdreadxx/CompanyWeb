@@ -24,7 +24,7 @@ namespace CompanyWeb.Data.Dao.Client
 
         public sSystem? getData()
         {
-            return _context.sSystems.FirstOrDefault(); ;
+            return _context.sSystems.FirstOrDefault();
         }
     }
 }
