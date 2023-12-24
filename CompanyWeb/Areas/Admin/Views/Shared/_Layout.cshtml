@@ -42,8 +42,8 @@
                         <li class="active">
                             <a class="sidebar-sub-toggle"><i class="ti-home"></i> Hệ thống <span class="sidebar-collapse-icon ti-angle-down"></span></a>
                             <ul>
-                                <li><a href="/Admin/sSystem">Thông tin công ty</a></li>
-                                <li><a href="/Admin/dUser">Quản lý tài khoản</a></li>
+                                <li><a href="/Admin/sSystem/Index">Thông tin công ty</a></li>
+                                <li><a href="/Admin/dUser/Index">Quản lý tài khoản</a></li>
                             </ul>
                         </li>
                         @* <li><a href="app-profile.html"><i class="ti-user"></i> Profile</a></li>
@@ -51,22 +51,21 @@
                         <li>
                             <a class="sidebar-sub-toggle"><i class="ti-view-list-alt"></i> Danh mục <span class="sidebar-collapse-icon ti-angle-down"></span></a>
                             <ul>
-                                <li><a href="ui-accordion.html">Loại đơn vị liên quan</a></li>
-                                <li><a href="ui-alerts.html">Loại bài đăng</a></li>
-                                <li><a href="ui-badges.html">Loại sản phẩm</a></li>
+                                <li><a href="/Admin/cCustomer/Index">Loại đơn vị liên quan</a></li>
+                                <li><a href="/Admin/cPost/Index">Loại bài đăng</a></li>
+                                <li><a href="/Admin/cProduct/Index">Loại sản phẩm</a></li>
                             </ul>
                         </li>
                         <li>
                             <a class="sidebar-sub-toggle"><i class="ti-panel"></i> Chức năng <span class="sidebar-collapse-icon ti-angle-down"></span></a>
                             <ul>
-                                <li><a href="uc-calendar.html">Đơn vị liên quan</a></li>
-                                <li><a href="uc-carousel.html">Sản phẩm</a></li>
-
-                                <li><a href="uc-datamap.html">Nhân viên</a></li>
-                                <li><a href="uc-todo-list.html">Phản hồi</a></li>
-                                <li><a href="uc-scrollable.html">Bài đăng</a></li>
-                                <li><a href="uc-sweetalert.html">QnA</a></li>
-                                <li><a href="uc-toastr.html">Tuyển dụng</a></li>
+                                <li><a href="/Admin/dCustomer/Index">Đơn vị liên quan</a></li>
+                                <li><a href="/Admin/dProduct/Index">Sản phẩm</a></li>
+                                <li><a href="/Admin/dEmployee/Index">Nhân viên</a></li>
+                                <li><a href="/Admin/dFeedback/Index">Phản hồi</a></li>
+                                <li><a href="/Admin/dPost/Index">Bài đăng</a></li>
+                                <li><a href="/Admin/dQnA/index">QnA</a></li>
+                                <li><a href="/Admin/dRecuitment/Index">Tuyển dụng</a></li>
                             </ul>
                         </li>
                         <li><a href="app-profile.html"><i class="ti-user"></i> Báo cáo</a></li>
@@ -229,7 +228,7 @@
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="container" style="padding-top:65px">
             @RenderBody()
         </div>
         

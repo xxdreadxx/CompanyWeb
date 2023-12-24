@@ -16,15 +16,15 @@ namespace CompanyWeb.Data.Dao.Admin
             _context = context;
         }
 
-        public sSystem getData(int ID)
+        public sSystem getData()
         {
-            return _context.sSystems.FirstOrDefault(x => x.ID == ID);
+            return _context.sSystems.FirstOrDefault();
         }
 
         public bool Update(sSystem res, ref string mess)
         {
             bool kt = true;
-            var item = _context.sSystems.FirstOrDefault(x => x.ID == res.ID);
+            var item = _context.sSystems.FirstOrDefault();
             if (item != null)
             {
                 item.Name = res.Name;
@@ -52,6 +52,7 @@ namespace CompanyWeb.Data.Dao.Admin
                 try
                 {
                     _context.SaveChanges();
+                    mess = "Cập nhật thông tin thành công";
                 }
                 catch (Exception ex)
                 {

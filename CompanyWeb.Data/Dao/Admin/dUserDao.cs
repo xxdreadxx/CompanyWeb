@@ -1,5 +1,6 @@
 ﻿using CompanyWeb.Data.EF;
 using CompanyWeb.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace CompanyWeb.Data.Dao.Admin
 {
     public class dUserDao
     {
-        private readonly CompanyDbContext _context;
+        private CompanyDbContext _context;
+        //private CompanyDbContext _context = new CompanyDbContext();
         public dUserDao(CompanyDbContext context)
         {
             _context = context;
@@ -28,7 +30,7 @@ namespace CompanyWeb.Data.Dao.Admin
             }
             else
             {
-                if(user.Password != password)
+                if (user.Password != password)
                 {
                     res = 0;
                     returnText = "Tài khỏa không tồn tại trong hệ thống, vui lòng thử lại!";
@@ -71,7 +73,7 @@ namespace CompanyWeb.Data.Dao.Admin
             }
             catch (Exception ex)
             {
-                kt=false;
+                kt = false;
                 mess = "Có lỗi sảy ra, thêm mới không thành công";
             }
             return kt;
@@ -81,7 +83,7 @@ namespace CompanyWeb.Data.Dao.Admin
         {
             bool kt = true;
             var item = _context.dUsers.FirstOrDefault(x => x.ID == user.ID);
-            if(item != null)
+            if (item != null)
             {
                 if (user.Avatar != null)
                 {

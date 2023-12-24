@@ -41,11 +41,11 @@
                             <form>
                                 <div class="form-group">
                                     <label>Tên đăng nhập</label>
-                                    <input type="email" class="form-control" placeholder="Tên đăng nhập">
+                                    <input type="email" id="txtUserName" class="form-control" placeholder="Tên đăng nhập">
                                 </div>
                                 <div class="form-group">
                                     <label>Mật khẩu</label>
-                                    <input type="password" class="form-control" placeholder="Mật khẩu">
+                                    <input type="password" id="txtPass" class="form-control" placeholder="Mật khẩu">
                                 </div>
                                 <div class="checkbox">
                                     <label>
@@ -93,24 +93,56 @@
 
 <script>
     function Login() {
-        toastr.success('This Is Success Message', 'Top Right', {
-            timeOut: 5000,
-            "closeButton": true,
-            "debug": false,
-            "newestOnTop": true,
-            "progressBar": true,
-            "positionClass": "toast-top-right",
-            "preventDuplicates": true,
-            "onclick": null,
-            "showDuration": "300",
-            "hideDuration": "1000",
-            "extendedTimeOut": "1000",
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut",
-            "tapToDismiss": false
+        var username = $('#txtUserName').val();
+        var password = $('#txtPass').val();
+        if (username == '' || password == '') {
+            toastr.error('Chưa nhập username hoặc pasword!', 'Thông báo', {
+                "positionClass": "toast-top-right",
+                timeOut: 5000,
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": true,
+                "progressBar": true,
+                "preventDuplicates": true,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut",
+                "tapToDismiss": false
+            })
+        }
+        else {
+            $.ajax({
+                async: false,
+                url: '/Admin/Login/DangNhap',
+                data: {
+                    username: username,
+                    password: password
+                },
+                // dataType: "json",
+                type: 'POST',
+                cache: false,
+                // contentType: false,
+                // processData: false,
+                success: function (res) {
+                    if (res.status == true) {
+                        toastr.success(res.mess, 'Thông báo!', 5000);
+                        setTimeout(function () {
+                            location.href = '/Admin/AdHome/Index';
+                        }, 1000);
+                    } else {
+                        alert("Cannot add to list !");
+                    }
+                },
+                error: function () {
+                    toastr.error('Có lỗi xảy ra, vui lòng thử lại sau', 'Lỗi!', 5000);
+                }
+            })
+        }
 
-        })
     }
 </script>
