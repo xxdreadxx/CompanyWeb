@@ -1,8 +1,16 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using CompanyWeb.Data.EF;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<CompanyDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CompanyDb"));
+});
 
 var app = builder.Build();
 

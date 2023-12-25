@@ -23,6 +23,7 @@ namespace CompanyWeb.Controllers
             ViewBag.customer = dao.getCustomer();
             ViewBag.feedBack = dao.getRandomFeedBack();
             ViewBag.posts = dao.getPots();
+            ViewBag.categoryPosts = dao.getAllCategories();
 
             return View();
         }

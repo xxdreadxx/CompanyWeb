@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using CompanyWeb.Data.Entities;
+@{
+    List<cPost> lstCategoryPosts = ViewBag.categoryPosts;
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -59,10 +63,10 @@
                     <li class="dropdown">
                         <a href="#"><span>Bài viết</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-                            <li><a href="#">Kiến thức kế toán</a></li>
-                            <li><a href="#">Giới thiệu và hướng dẫn phần mềm</a></li>
-                            <li><a href="#">Tin công ty</a></li>
-                            <li><a href="#">Tin trong nước và thế giới</a></li>
+                            @foreach(var category in lstCategoryPosts)
+                            {
+                                <li><a href="/Posts/Index/@category.ID">@category.Title</a></li>
+                            }
                         </ul>
                     </li>
                     <li class="dropdown">

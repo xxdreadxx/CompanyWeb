@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+
 //using Microsoft.Identity.Client;
 using CompanyWeb.Data.Configuration;
 using CompanyWeb.Data.Entities;
@@ -13,9 +14,9 @@ using System.Threading.Tasks;
 
 namespace CompanyWeb.Data.EF
 {
-    public class CompanyDbContext : IdentityDbContext
+    public class CompanyDbContext : DbContext
     {
-        public CompanyDbContext(DbContextOptions options) : base(options)
+        public CompanyDbContext(DbContextOptions<CompanyDbContext> contextOptions) : base(contextOptions)
         {
             //options.UseQslServer("")
         }
