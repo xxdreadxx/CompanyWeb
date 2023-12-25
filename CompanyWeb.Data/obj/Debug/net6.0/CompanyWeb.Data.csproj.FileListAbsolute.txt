@@ -12,3 +12,17 @@ E:\Pj\MsHongProject\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\refint\CompanyWe
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.pdb
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.genruntimeconfig.cache
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\ref\CompanyWeb.Data.dll
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\bin\Debug\net6.0\CompanyWeb.Data.deps.json
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\bin\Debug\net6.0\CompanyWeb.Data.runtimeconfig.json
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\bin\Debug\net6.0\CompanyWeb.Data.dll
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\bin\Debug\net6.0\CompanyWeb.Data.pdb
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.csproj.AssemblyReference.cache
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.AssemblyInfoInputs.cache
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.AssemblyInfo.cs
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.csproj.CoreCompileInputs.cache
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.dll
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\refint\CompanyWeb.Data.dll
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.pdb
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\CompanyWeb.Data.genruntimeconfig.cache
+D:\Work\Hieu\CompanyWeb\CompanyWeb.Data\obj\Debug\net6.0\ref\CompanyWeb.Data.dll
