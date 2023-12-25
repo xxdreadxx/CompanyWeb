@@ -14,11 +14,11 @@ using System.Threading.Tasks;
 
 namespace CompanyWeb.Data.EF
 {
-    public class CompanyDbContext : DbContext
+    public class CompanyDbContext : IdentityDbContext
     {
-        public CompanyDbContext(DbContextOptions<CompanyDbContext> contextOptions) : base(contextOptions)
+        public CompanyDbContext(DbContextOptions options) : base(options)
         {
-            //options.UseSqlServer("")
+            //options.UseQslServer("")
         }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -15,12 +15,13 @@ namespace CompanyWeb.Data.EF
         public CompanyDbContext CreateDbContext(string[] args)
         {
             IConfigurationRoot configuaration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
+
             var connectionstring = configuaration.GetConnectionString("CompanyDb");
+
             var optionsBuilder = new DbContextOptionsBuilder<CompanyDbContext>();
             optionsBuilder.UseSqlServer(connectionstring);
 
             return new CompanyDbContext(optionsBuilder.Options);
-            //return new CompanyDbContext();
         }
     }
 }

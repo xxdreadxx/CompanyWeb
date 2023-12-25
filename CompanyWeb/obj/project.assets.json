@@ -744,14 +744,22 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.19": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+=======
+      "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+>>>>>>> parent of 5ce67ea (commit)
             "related": ".xml"
           }
         },
         "runtime": {
+<<<<<<< HEAD
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
             "related": ".xml"
           }
@@ -769,6 +777,9 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+=======
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+>>>>>>> parent of 5ce67ea (commit)
             "related": ".xml"
           }
         }
@@ -946,6 +957,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.19": {
         "type": "package",
         "dependencies": {
@@ -963,6 +975,8 @@
           }
         }
       },
+=======
+>>>>>>> parent of 5ce67ea (commit)
       "Microsoft.AspNetCore.JsonPatch/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2394,6 +2408,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Microsoft.Extensions.Identity.Core/6.0.19": {
         "type": "package",
         "dependencies": {
@@ -2430,6 +2445,8 @@
           }
         }
       },
+=======
+>>>>>>> parent of 5ce67ea (commit)
       "Microsoft.Extensions.Localization/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -4818,6 +4835,7 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+<<<<<<< HEAD
       },
       "CompanyWeb.Data/1.0.0": {
         "type": "project",
@@ -4834,6 +4852,8 @@
         "runtime": {
           "bin/placeholder/CompanyWeb.Data.dll": {}
         }
+=======
+>>>>>>> parent of 5ce67ea (commit)
       }
     }
   },
@@ -5708,6 +5728,7 @@
         "microsoft.aspnetcore.cors.nuspec"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.19": {
       "sha512": "k/+OlM9s2HppCChkCumrG5NJmJqlpUthxDyjzdvQg4zt+8fXbSpf97n9ofJNjqd4EcMMqLUHXsJRv9mX6piYPw==",
       "type": "package",
@@ -5746,6 +5767,21 @@
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
     },
+=======
+    "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {
+      "sha512": "GXmMD8/vuTLPLvKzKEPz/4vapC5e0cwx1tUVd83ePRyWF9CCrn/pg4/1I+tGkQqFLPvi3nlI2QtPtC6MQN8Nww==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.cryptography.internal/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
+        "microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.internal.nuspec"
+      ]
+    },
+>>>>>>> parent of 5ce67ea (commit)
     "Microsoft.AspNetCore.DataProtection/2.2.0": {
       "sha512": "G6dvu5Nd2vjpYbzazZ//qBFbSEf2wmBUbyAR7E4AwO3gWjhoJD5YxpThcGJb7oE3VUcW65SVMXT+cPCiiBg8Sg==",
       "type": "package",
@@ -5876,6 +5912,7 @@
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.19": {
       "sha512": "sCSZnobVRIsmznWE1+47ldnQGKf130jBrW609RRVBziUwsGM9oL2BLg/I4pUShvgTvYBMt3NMVmy9jA4tmvTSw==",
       "type": "package",
@@ -5891,6 +5928,8 @@
         "microsoft.aspnetcore.identity.entityframeworkcore.nuspec"
       ]
     },
+=======
+>>>>>>> parent of 5ce67ea (commit)
     "Microsoft.AspNetCore.JsonPatch/2.2.0": {
       "sha512": "o9BB9hftnCsyJalz9IT0DUFxz8Xvgh3TOfGWolpuf19duxB4FySq7c25XDYBmBMS+sun5/PsEUAi58ra4iJAoA==",
       "type": "package",
@@ -7385,6 +7424,7 @@
         "microsoft.extensions.hosting.abstractions.nuspec"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Identity.Core/6.0.19": {
       "sha512": "QxsAm0gucinO4YPutxaeWOepygUUJBrnYxaVuo+qniId6mT5jWQ6+yGlB/HDa9D/55T5C5NE0rP770tVTVjgiQ==",
       "type": "package",
@@ -7423,6 +7463,8 @@
         "microsoft.extensions.identity.stores.nuspec"
       ]
     },
+=======
+>>>>>>> parent of 5ce67ea (commit)
     "Microsoft.Extensions.Localization/2.2.0": {
       "sha512": "3nBQLeBrcd4Rgd9vQi4gF5NgAWxnQrHekjjwlgww4wyLNfJDizjiex2resOLoAuAgy3y2IIAWjOpbr0UKR2ykw==",
       "type": "package",
@@ -12857,16 +12899,22 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+<<<<<<< HEAD
     },
     "CompanyWeb.Data/1.0.0": {
       "type": "project",
       "path": "../CompanyWeb.Data/CompanyWeb.Data.csproj",
       "msbuildProject": "../CompanyWeb.Data/CompanyWeb.Data.csproj"
+=======
+>>>>>>> parent of 5ce67ea (commit)
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+<<<<<<< HEAD
       "CompanyWeb.Data >= 1.0.0",
+=======
+>>>>>>> parent of 5ce67ea (commit)
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.22",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.19",
@@ -12878,11 +12926,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\hungs\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+>>>>>>> parent of 5ce67ea (commit)
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Work\\Hieu\\CompanyWeb\\CompanyWeb\\CompanyWeb.csproj",
       "projectName": "CompanyWeb",
       "projectPath": "D:\\Work\\Hieu\\CompanyWeb\\CompanyWeb\\CompanyWeb.csproj",
@@ -12891,6 +12944,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hungs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "E:\\Pj\\MsHongProject\\CompanyWeb\\CompanyWeb\\CompanyWeb.csproj",
+      "projectName": "CompanyWeb",
+      "projectPath": "E:\\Pj\\MsHongProject\\CompanyWeb\\CompanyWeb\\CompanyWeb.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\Pj\\MsHongProject\\CompanyWeb\\CompanyWeb\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> parent of 5ce67ea (commit)
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12903,11 +12966,15 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+<<<<<<< HEAD
           "projectReferences": {
             "D:\\Work\\Hieu\\CompanyWeb\\CompanyWeb.Data\\CompanyWeb.Data.csproj": {
               "projectPath": "D:\\Work\\Hieu\\CompanyWeb\\CompanyWeb.Data\\CompanyWeb.Data.csproj"
             }
           }
+=======
+          "projectReferences": {}
+>>>>>>> parent of 5ce67ea (commit)
         }
       },
       "warningProperties": {
@@ -12976,7 +13043,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+>>>>>>> parent of 5ce67ea (commit)
       }
     }
   }

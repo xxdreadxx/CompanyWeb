@@ -531,6 +531,7 @@ E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\bin\Debug\net6.0\runtimes\win\lib\nets
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 E:\Pj\MsHongProject\CompanyWeb\CompanyWeb\bin\Debug\net6.0\bundleconfig.json
+<<<<<<< HEAD
 D:\Work\Hieu\CompanyWeb\CompanyWeb\obj\Debug\net6.0\CompanyWeb.csproj.AssemblyReference.cache
 D:\Work\Hieu\CompanyWeb\CompanyWeb\obj\Debug\net6.0\CompanyWeb.GeneratedMSBuildEditorConfig.editorconfig
 D:\Work\Hieu\CompanyWeb\CompanyWeb\obj\Debug\net6.0\CompanyWeb.AssemblyInfoInputs.cache
@@ -1067,3 +1068,5 @@ D:\Work\Hieu\CompanyWeb\CompanyWeb\bin\Debug\net6.0\CompanyWeb.Data.pdb
 D:\Work\Hieu\CompanyWeb\CompanyWeb\obj\Debug\net6.0\CompanyWeb.csproj.CopyComplete
 D:\Work\Hieu\CompanyWeb\CompanyWeb\obj\Debug\net6.0\CompanyWeb.genruntimeconfig.cache
 D:\Work\Hieu\CompanyWeb\CompanyWeb\obj\Debug\net6.0\ref\CompanyWeb.dll
+=======
+>>>>>>> parent of 5ce67ea (commit)
