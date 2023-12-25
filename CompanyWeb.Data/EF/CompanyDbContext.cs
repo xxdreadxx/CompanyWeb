@@ -18,7 +18,7 @@ namespace CompanyWeb.Data.EF
     {
         public CompanyDbContext(DbContextOptions<CompanyDbContext> contextOptions) : base(contextOptions)
         {
-            //options.UseQslServer("")
+            //options.UseSqlServer("")
         }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -9,6 +9,10 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.suo
+*.csproj
+*.csproj.user
+*.bin
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -99,6 +103,8 @@ StyleCopReport.xml
 *.scc
 *.sln
 *.csproj
+*.csproj.user
+*.suo
 
 # Chutzpah Test files
 _Chutzpah*
@@ -357,12 +363,13 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+CompanyWeb/Content/
+CompanyWeb/Images/
+CompanyWeb/Uploads/
+CompanyWeb/obj/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-
-.vs/
-*/bin/
